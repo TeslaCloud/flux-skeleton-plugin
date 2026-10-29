@@ -41,7 +41,7 @@ Players are welcomed when they join unless the `skeleton_greeting_enabled` confi
 - `plugin/cl_plugin.lua`: the `skeleton_greet` console command, which sends the `fl_skeleton_greet` message.
 - `plugin/cl_hooks.lua`: the HUD counter, translated only when the count or the language changes.
 - `plugin/sv_hooks.lua`: the welcome notification when a player joins.
-- `plugin/sv_nethooks.lua`: the receiver of `fl_skeleton_greet`, with validity, type, permission and rate checks.
+- `plugin/nethooks/sv_skeleton.lua`: the receiver of `fl_skeleton_greet`, with validity, type, permission and rate checks.
 - `plugin/commands/sh_skeleton.lua`: the `/skeleton` command.
 - `plugin/roles/sh_user.lua`: grants the `skeleton` permission to the `user` role and the roles based on it.
 - `plugin/config/config.yml`: the definition of the `skeleton_greeting_enabled` config.

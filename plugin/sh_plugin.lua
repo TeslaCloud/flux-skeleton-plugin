@@ -13,4 +13,3 @@ PLUGIN:set_global('Skeleton')
 require_relative 'cl_plugin'
 require_relative 'cl_hooks'
 require_relative 'sv_hooks'
-require_relative 'sv_nethooks'
