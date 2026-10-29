@@ -8,10 +8,11 @@ end
 --- The key of the player data value that counts the greetings a player has received.
 Skeleton.data_key = 'skeleton_greetings'
 
---- Returns how many greetings a player has received, over all of their sessions.
+--- Returns how many greetings a player has received, over all of their sessions, from the
+-- data table of the player.
 -- @param target [Player]
 -- @return [Number 0 for a player who has never been greeted, and on the client for anyone but
 --   the local player]
 function Skeleton:get_greetings(target)
-  return target:get_player_data(self.data_key, 0)
+  return target:get_data()[self.data_key] or 0
 end
