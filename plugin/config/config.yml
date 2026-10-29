@@ -1,0 +1,11 @@
+categories:
+  skeleton:
+    name: config.skeleton.title
+    description: config.skeleton.desc
+configs:
+  skeleton_greeting_enabled:
+    name: config.skeleton.greeting_enabled.name
+    description: config.skeleton.greeting_enabled.desc
+    category: skeleton
+    type: boolean
+    default_value: true

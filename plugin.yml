@@ -1,0 +1,4 @@
+name: Skeleton
+description: A demo plugin with one file of every kind a plugin is built from. Players greet each other and see how often they have been greeted.
+author: TeslaCloud Studios
+environment: development

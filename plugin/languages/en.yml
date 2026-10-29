@@ -1,0 +1,23 @@
+en:
+  command:
+    skeleton:
+      description: Greet one or more players.
+      syntax: <target>
+  config:
+    skeleton:
+      title: Skeleton
+      desc: Settings of the Skeleton demo plugin.
+      greeting_enabled:
+        name: Welcome message
+        desc: Whether players are welcomed with a notification when they join the server.
+  error:
+    skeleton:
+      cant_greet: You cannot greet {target}.
+  notification:
+    skeleton:
+      welcome: Welcome to the server, {player}!
+      greeted: "{player} has greeted you."
+      greet_sent: You have greeted {target}.
+  ui:
+    skeleton:
+      greetings: "Greetings received: {count}"

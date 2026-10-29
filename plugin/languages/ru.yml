@@ -1,0 +1,23 @@
+ru:
+  command:
+    skeleton:
+      description: Поприветствовать одного или нескольких игроков.
+      syntax: <цель>
+  config:
+    skeleton:
+      title: Skeleton
+      desc: Настройки демонстрационного плагина Skeleton.
+      greeting_enabled:
+        name: Приветственное сообщение
+        desc: Получают ли игроки приветственное уведомление при входе на сервер.
+  error:
+    skeleton:
+      cant_greet: Вы не можете поприветствовать {target}.
+  notification:
+    skeleton:
+      welcome: Добро пожаловать на сервер, {player}!
+      greeted: "{player} приветствует вас."
+      greet_sent: Вы поприветствовали {target}.
+  ui:
+    skeleton:
+      greetings: "Получено приветствий: {count}"

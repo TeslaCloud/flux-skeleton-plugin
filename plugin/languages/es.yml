@@ -1,0 +1,23 @@
+es:
+  command:
+    skeleton:
+      description: Saluda a uno o más jugadores.
+      syntax: <objetivo>
+  config:
+    skeleton:
+      title: Skeleton
+      desc: Ajustes del plugin de demostración Skeleton.
+      greeting_enabled:
+        name: Mensaje de bienvenida
+        desc: Si los jugadores reciben una notificación de bienvenida al entrar en el servidor.
+  error:
+    skeleton:
+      cant_greet: No puedes saludar a {target}.
+  notification:
+    skeleton:
+      welcome: ¡Bienvenido al servidor, {player}!
+      greeted: "{player} te ha saludado."
+      greet_sent: Has saludado a {target}.
+  ui:
+    skeleton:
+      greetings: "Saludos recibidos: {count}"
