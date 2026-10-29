@@ -18,7 +18,7 @@ end
 -- @param _cur_time [Number current CurTime()]
 -- @param scrw [Number screen width]
 -- @param _scrh [Number screen height]
-function Skeleton:FLHUDPaint(_cur_time, scrw, _scrh)
+function Skeleton:HUDPaintAlive(_cur_time, scrw, _scrh)
   if !greetings_text then return end
 
   local margin = math.scale(8)
