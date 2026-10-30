@@ -3,7 +3,7 @@
 -- the `skeleton_greet` console command, which sends the `fl_skeleton_greet` message. Every
 -- player counts the greetings they have received in their persistent player data
 -- (`Skeleton:get_greetings`), and their HUD shows the count. Players are welcomed when they
--- join unless the `skeleton_greeting_enabled` config is off, and the `SkeletonCanGreet` hook
+-- join unless the `skeleton_greeting_enabled` config is off, and the `PlayerCanGreet` hook
 -- can refuse a greeting. `plugin.yml` limits the plugin to the development environment.
 -- @environment [development]
 -- @module [Skeleton]

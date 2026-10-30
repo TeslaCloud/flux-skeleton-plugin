@@ -37,7 +37,7 @@ Players are welcomed when they join unless the `skeleton_greeting_enabled` confi
 - `plugin.yml`: name, description, author and the environment the plugin loads in.
 - `plugin/sh_plugin.lua`: the main file; sets the `Skeleton` global and includes the root files.
 - `plugin/lib/sh_skeleton.lua`: `Skeleton:get_greetings`, the counter kept in the player data.
-- `plugin/lib/sv_skeleton.lua`: `Skeleton:greet`, the checked entry point that runs the `SkeletonCanGreet` hook.
+- `plugin/lib/sv_skeleton.lua`: `Skeleton:greet`, the checked entry point that runs the `PlayerCanGreet` hook.
 - `plugin/cl_plugin.lua`: the `skeleton_greet` console command, which sends the `fl_skeleton_greet` message.
 - `plugin/cl_hooks.lua`: the HUD counter, translated only when the count or the language changes.
 - `plugin/sv_hooks.lua`: the welcome notification when a player joins.

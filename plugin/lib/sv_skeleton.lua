@@ -6,7 +6,7 @@ if !Skeleton then
 end
 
 --- Makes a player greet another one: the greeted player's counter goes up by one and both are
--- told. A player cannot greet themselves, and the `SkeletonCanGreet` hook may refuse the
+-- told. A player cannot greet themselves, and the `PlayerCanGreet` hook may refuse the
 -- greeting, in which case the greeting player is told so.
 -- @param actor [Player the player who greets]
 -- @param target [Player the player who is greeted]
@@ -19,7 +19,7 @@ function Skeleton:greet(actor, target)
   -- @param actor [Player the player who greets]
   -- @param target [Player the player who is greeted]
   -- @return [Boolean return false to refuse the greeting; nothing lets it take place]
-  if target == actor or hook.Run('SkeletonCanGreet', actor, target) == false then
+  if target == actor or hook.Run('PlayerCanGreet', actor, target) == false then
     actor:notify('error.skeleton.cant_greet', { target = target })
 
     return false
